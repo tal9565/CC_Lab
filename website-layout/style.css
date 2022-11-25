@@ -1,0 +1,33 @@
+
+
+span{
+    border-color: cornflowerblue;
+    border-width: 3px;
+    border-style: dashed;
+}
+
+div{
+    border-color: hotpink;
+    
+}
+
+.headlineWrap{
+    margin-bottom: 200px;
+}
+
+.contentBox{
+    background-color:rosybrown;
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    margin:20px;
+   
+}
+
+.contentWrap{
+    margin:auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: aquamarine;
+
+}
