@@ -16,12 +16,33 @@
 
 <body>
 
-  <h1>Sketch</h1>
+  <div class = "title">
+    <h2><center>the <span>sketch</span> gallery</center></h2>
+
+   <div class = "info">
+       <h4> <a href="about.html">about the author</a> </h4>
+       <h4> click <a href="https://wp.nyu.edu/tiffany/">here</a> to learn more!</h4>
+   </div>
+</div>
 
   <!-- the following div will contain the p5 canvas. -->
-  <div id="canvasContainer"></div>
+  <div class = "content">
+    <div class = "canvas">
 
-  <p>Project Description</p>
+      <h3><i>'SUNSET'</i></h3>
+      <div id="canvasContainer"> </div>
+
+    </div>
+
+    <div class = "article">
+      <p>For this project, I wanted to create an imitation of flocks of birds. For this, I used movements that allowed the birds to go back and forth (mimicking how flocks travel) and also to change the scale of the bird’s size to make them appear as if flying away. I also added some interaction for the user to control the speed of the flock. </p>
+      <p>For the actual code, I had a lot of help from looking through the example codes provided from the slides, especially the ones on scaling vertex shapes, as well as the speeding-up example. The part of the code I struggled with the most was also the scaling part of the birds (for a long time I realized my issue was not putting scale() in the display), as well as with creating the sunset background, as I wanted to create a proper gradient. For this, I actually used the help of a Youtube tutorial in order to create the background. Some minor mishaps throughout were also due to misplacements outside of the brackets. </p>
+      <p>Object-oriented programming focuses on creating codes around specific objects rather than functions. Instead of creating functions and placing objects and their characteristics inside for the final product, the code begins with the objects themselves and builds upon them for the final product. A class is created to define the object and keep all the characteristics (such as properties and methods) of the object in an enclosed space. The instance of a class is basically the execution of the object and can be executed as many times as there are instances. </p>
+      <p>OOP is especially useful in codes where movements are different for each object or there are multiple instances of that object. It can be utilized in those ways mentioned and also makes it easier for objects to be manipulated within the code without affecting all of the code. </p>
+      <p>For this object I created, I implemented properties of coordinates (this.X, this.Y) , speed (this.xSpeed, this.ySpeed), and scale (this.scale); then I used methods that would move the coordinates around according to the speed, which was applied in update(), as well as change in scale. I also used the method titled bounce() to make sure the flock of birds would stay in the frame of the canvas, which was created using if() statements using the properties mentioned earlier. Lastly, for the user interaction, if() statements, keyIsPressed(), and mousePressed() were incorporated into function draw().</p>
+    </div>
+  </div>
+  
 
   <!-- the script tag below should always be at the bottom, right before the closing body tag -->
   <script src="sketch.js"></script>
