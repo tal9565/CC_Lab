@@ -1,0 +1,17 @@
+img{
+    width: 300px;
+}
+
+.caption{
+    font-size: 15px;
+}
+
+.box{
+    border:black dotted 2px;
+    padding:5px;
+    display:inline-block;
+}
+
+.p{
+    30px;
+}

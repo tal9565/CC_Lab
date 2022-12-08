@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#canvasContainer{
+  background-color: rgb(33, 158, 81);
+  width:100%;
+  max-width: 700px;
+  margin:auto;
+
+}
+
+#canvasContainer canvas{
+  width: 100% !important;
+  height:100% !important;
+  /* not always a good idea to do height 100%
+  only use it in this scenario */
+
+  /* DON'T EVER USE IMPORTANT UNLESS IN THIS CASE
+  MIGHT MESS WITH CSS */
+
+
+}
+
+

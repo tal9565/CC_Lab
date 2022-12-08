@@ -1,0 +1,268 @@
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: rgb(237, 205, 210);
+    background-color: black;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a{
+    color:azure;
+}
+
+.header{
+    
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    outline: 2px;
+    margin-bottom: 30px;
+    
+    text-align: center;
+
+    background-color: rgba(240, 255, 255, 0);
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        position: inherit;
+    }
+}
+
+.about-link{
+    
+    
+    margin:auto;
+    padding-right: 60px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.content-issue{
+    width: 100%;
+    max-width: 800px;
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+
+    margin-top: 100px;
+    margin:auto;
+
+   padding:30px;
+
+   background-color: rgba(4, 4, 71, 0.509);
+}
+
+.issue-text{
+    width: 100%;
+    max-width: 300px;
+
+    outline: 2px;
+    outline-width: 3px;
+
+   text-align: center;
+    
+}
+
+.issue-image{
+    flex-grow:1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-issue{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .issue-image{
+        flex-direction: column-reverse;
+    }
+
+   
+
+
+}
+
+h3{
+background-color: cadetblue;
+}
+
+
+h5{
+    font-size: larger;
+    text-align: enter;
+}
+
+span{
+    background-color: cadetblue;
+}
+
+/* FOR ARTICLE.HTML */
+
+.second-header{
+    text-align: center;
+
+}
+
+.title-header{
+    text-align: center;
+
+    position:sticky;
+    top:10px;
+
+}
+
+.content-section{
+    width: 100%;
+    max-width: 800px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 100px;
+    margin:auto;
+
+   padding:30px;
+
+   background-color:rgba(4, 4, 71, 0.509) ;
+
+   position: sticky;
+   top: 40px;
+}
+
+
+.art-section{
+    outline-width: 3px;
+    outline-color: whitesmoke;
+    outline-style: groove;
+    
+    padding: 30px;
+    gap:5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.art-image{
+    flex: 1;
+    
+}
+
+.art-text{
+    padding: 30px;
+    text-align: center;
+
+}
+.writing-section{
+    width: 100%;
+    max-width: 800px;
+    /* margin:auto; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* align-content: center; */
+
+    
+    outline-width: 3px;
+    outline-color: whitesmoke;
+    outline-style: groove;
+}
+.writing-section div{
+    /* flex-grow:1; */
+    flex: 1 1 0px;
+    aspect-ratio: 1;
+}
+#image1Box{
+    background-image: url(img/maanyaa.JPEG);
+    background-size: contain;
+}
+#image2Box{
+    background-image: url(img/maylee.JPEG);
+    background-size: contain;
+}
+#image3Box{
+    background-image: url(img/tiffany.JPEG);
+    background-size: contain;
+}
+
+
+
+/* .text-wrapper{
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+} */
+
+
+#text-1Box{
+
+    width: 100%;
+    max-width: fit-content;
+    padding-left: 15px;
+    padding-top: 70px;
+    padding-right: 3px;
+    font-weight: bold;
+    
+    color: rgb(5, 0, 153);
+    
+    
+}
+
+
+
+#text-2Box{
+
+    width: 100%;
+    max-width: fit-content;
+    padding-left: 10px;
+    padding-right: 2px;
+    padding-top: 165px;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(214, 255, 223);
+}
+
+#text-3Box{
+
+    width: 100%;
+    max-width: fit-content;
+    padding-left: 65px;
+    padding-top: 120px;
+    padding-right: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(157, 255, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .art-section{
+        flex-direction: column-reverse;
+    }
+
+    .writing-section{
+        flex-direction: column;
+    }
+    
+}
+
+h6{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+font-weight: bolder;
+
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+

@@ -37,14 +37,14 @@ function draw() {
 
   for (let i = 0; i < birds.length; i++) {
     let b = birds[i];
-    if (keyIsPressed) {
-      if (key == "a" || key == "A") {
-        b.slowDown();
-      }
-      if (key == "s" || key == "S") {
-        b.speedUp();
-      }
-    }
+    // if (keyIsPressed) {
+    //   if (key == "a" || key == "A") {
+    //     b.slowDown();
+    //   }
+    //   if (key == "s" || key == "S") {
+    //     b.speedUp();
+    //   }
+    // }
 
     b.update();
     b.display();

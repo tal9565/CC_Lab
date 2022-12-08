@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    font-size: 20px;
+}
+.header{
+    margin: auto;
+    text-align: center;
+}
+
+.wrapper{
+    margin: auto;
+    width:100%;
+    max-width: 900px;
+    background-color: rgb(208, 255, 0);
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.item{
+    width:300px;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: 2px solid blue
+}
+
+.item img{
+    width:100%;
+}
+
+.number{
+    color:rgb(72, 0, 255);
+    background-color: rgb(238, 147, 0);
+}
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
