@@ -1,14 +1,28 @@
-
-// window.addEventListener("resize", windowResized, false);
-
-
-
 let img;
 let circles = [];
 
 function preload() {
   img = loadImage("img/zeenbg.png");
 }
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+  circles = [];
+  let gridSize = 15;
+  for (let i = 0; i < 1000; i++) {
+    let x = floor(random(width));
+    let y = floor(random(height));
+    let index = (x + y * img.width) * 4;
+    let r = img.pixels[index + 0];
+    let g = img.pixels[index + 1];
+    let b = img.pixels[index + 2];
+    //let a = img.pixels[i + 3];
+    circles.push(
+      new Circle(x + gridSize / 2, y + gridSize / 2, gridSize / 2, r, g, b)
+    );
+  }
+}
+
 
 
 function setup() {
@@ -50,9 +64,6 @@ function draw() {
   }
 }
 
-function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
-}
 
 class Circle {
   constructor(x, y, rad, r, g, b) {
