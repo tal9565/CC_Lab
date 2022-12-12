@@ -3,6 +3,13 @@ body{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     color: rgb(237, 205, 210);
+    /* background-color: black; */
+    background-image: url(img/zeenbg.png);
+    background-position: center;
+}
+
+#noBG{
+    background-image: none;
     background-color: black;
 }
 
@@ -13,7 +20,10 @@ p{
 
 a{
     color:azure;
+    
 }
+
+
 
 .header{
     
@@ -34,14 +44,7 @@ a{
     }
 }
 
-.about-link{
-    
-    
-    margin:auto;
-    padding-right: 60px;
-    text-align: right;
-    margin-bottom: 50px;
-}
+
 
 .content-issue{
     width: 100%;
@@ -55,17 +58,19 @@ a{
 
    padding:30px;
 
-   background-color: rgba(4, 4, 71, 0.509);
+   background-color: rgba(0, 0, 0, 0.509);
 }
 
 .issue-text{
+    padding-left: 10px;
     width: 100%;
     max-width: 300px;
+    margin: auto;
 
     outline: 2px;
     outline-width: 3px;
-
-   text-align: center;
+    text-align: center;
+   
     
 }
 
@@ -86,8 +91,6 @@ a{
     .issue-image{
         flex-direction: column-reverse;
     }
-
-   
 
 
 }
@@ -163,21 +166,21 @@ span{
 
 }
 .writing-section{
-    width: 100%;
-    max-width: 800px;
-    /* margin:auto; */
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    /* align-content: center; */
-
-    
     outline-width: 3px;
     outline-color: whitesmoke;
     outline-style: groove;
+
+    
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+   
 }
-.writing-section div{
-    /* flex-grow:1; */
+
+/* .writing-section div{
+   
     flex: 1 1 0px;
     aspect-ratio: 1;
 }
@@ -192,7 +195,7 @@ span{
 #image3Box{
     background-image: url(img/tiffany.JPEG);
     background-size: contain;
-}
+} */
 
 
 
@@ -204,7 +207,7 @@ span{
 } */
 
 
-#text-1Box{
+/* #text-1Box{
 
     width: 100%;
     max-width: fit-content;
@@ -242,9 +245,19 @@ span{
     font-size: 14px;
     font-weight: bold;
     color: rgb(157, 255, 0);
+} */
+
+.style-section{
+    outline-width: 3px;
+    outline-color: whitesmoke;
+    outline-style: groove;
+    
+    padding: 30px;
+    gap:5px;
+
+    display: flex;
+    flex-direction: row;
 }
-
-
 @media only screen and (max-width: 600px) {
     .art-section{
         flex-direction: column-reverse;
@@ -252,8 +265,21 @@ span{
 
     .writing-section{
         flex-direction: column;
+        
     }
-    
+
+    #image-1Box{
+        background-image: none;
+    }
+    #image-2Box{
+        background-image: none;
+    }
+    #image-3Box{
+        background-image: none;
+    }
+    .style-section{
+        flex-direction: column;
+    }
 }
 
 h6{
@@ -266,3 +292,21 @@ margin-top: 10px;
 margin-bottom: 10px;
 }
 
+
+
+
+#canvasContainer{
+    display: block;
+    margin: auto;
+    
+}
+
+/* #issue-title{
+    position: sticky;
+    top:10;
+} */
+
+#about-section{
+    padding: 30px;
+    gap: 20px;
+}
