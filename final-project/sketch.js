@@ -1,9 +1,7 @@
 
-window.addEventListener("resize", windowResized, false);
+// window.addEventListener("resize", windowResized, false);
 
-function windowResized(){
-    resizeCanvas(windowWidth, windowHeight);
-}
+
 
 let img;
 let circles = [];
@@ -42,7 +40,7 @@ function setup() {
 
 function draw() {
   //image(img, 0, 0);
-
+  background(0,5);
   for (let i = 0; i < circles.length; i++) {
     let c = circles[i];
     //c.adjustSize();
@@ -50,6 +48,10 @@ function draw() {
     c.checkMouse();
     c.display();
   }
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 class Circle {
